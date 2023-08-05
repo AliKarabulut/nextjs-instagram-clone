@@ -9,14 +9,14 @@ type LayoutTypes = {
 const LoginFormLayout = ({ children }: LayoutTypes) => {
   return (
     <div className="w-[350px] h-fit flex justify-center flex-col">
-      <div className="border-[1px] px-9 ">
-        <div className="w-full flex justify-center py-8">
+      <div className="border-[1px] px-9  py-[10px]">
+        <div className="w-full flex justify-center pb-3 pt-8">
           <div
             className="w-44 h-14 bg-no-repeat  bg-logo bg-pos"
             style={{ backgroundImage: "url(/img/instagramLogo.png)" }}
           ></div>
         </div>
-        <form className="flex items-center  flex-col">{children}</form>
+        <form className="flex items-center  flex-col mt-6">{children}</form>
       </div>
       <BottomBox link="register">Hesabın yok mu</BottomBox>
       <div className="flex items-center flex-col">
