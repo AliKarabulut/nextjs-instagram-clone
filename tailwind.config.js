@@ -9,6 +9,8 @@ module.exports = {
     extend: {
       colors: {
         "primary-button": "#0095F6",
+        "facebook-logo": "#385185",
+        "ig-link": "#00376B",
 
       },
 
