@@ -1,14 +1,18 @@
+import Button from "@/components/button";
+import Input from "@/components/input";
 import Link from "next/link";
 import { AiFillFacebook } from "react-icons/ai";
+
+
 const Login = () => {
   return (
     <>
-      <input
+      <Input
         type="text"
         placeholder="Telefon numarası, kullanıcı adı veya e-posta"
       />
-      <input type="password" placeholder="Şifre" />
-      <button type="submit">Giriş yap</button>
+      <Input type="password" placeholder="Şifre" />
+      <Button type="submit" disabled>Giriş yap</Button>
       <hr className="h-0.5 w-full " />
       <span>YA DA</span>
       <hr className="h-0.5 w-full " />

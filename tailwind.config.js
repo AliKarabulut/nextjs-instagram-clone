@@ -6,6 +6,13 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    extend: {
+      colors: {
+        "primary-button": "#0095F6",
+
+      },
+
+    },
     backgroundPosition: {
       'logo': '0px -47px'
     },
