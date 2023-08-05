@@ -1,5 +1,6 @@
 "use client";
 import BottomBox from "@/components/login/bottom-box";
+import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 
@@ -21,11 +22,11 @@ const LoginFormLayout = ({ children }: LayoutTypes) => {
         <form className="flex items-center  flex-col">{children}</form>
       </div>
       <BottomBox link="register">Hesabın yok mu</BottomBox>
-      <div>
-        <div>Uygulamayı indir</div>
-        <div>
-          <div>Google Play</div>
-          <div>Microsofttan edin</div>
+      <div className="flex items-center flex-col">
+        <div className="text-sm mb-3">Uygulamayı indir.</div>
+        <div className="flex gap-2">
+        <Image src="/img/googleplay.png" alt="Google Play'den Edin" height={40} width={134}/>
+        <Image src="/img/microsoft.png" alt="Microsoft'tan Playden Edin" height={40} width={110}/>
         </div>
       </div>
     </div>
