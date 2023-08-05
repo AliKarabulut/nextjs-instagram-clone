@@ -1,15 +1,12 @@
 "use client";
 import BottomBox from "@/components/login/bottom-box";
 import Image from "next/image";
-import Link from "next/link";
-import { useParams } from "next/navigation";
 
 type LayoutTypes = {
   children: React.ReactNode;
 };
 
 const LoginFormLayout = ({ children }: LayoutTypes) => {
-  const params = useParams();
   return (
     <div className="w-[350px] h-fit flex justify-center flex-col">
       <div className="border-[1px] px-9 ">
