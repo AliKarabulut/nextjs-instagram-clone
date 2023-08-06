@@ -1,19 +1,23 @@
-import {GoHome, GoHomeFill, GoSearch} from 'react-icons/go' 
-import {FaRegCompass,FaCompass} from 'react-icons/fa' 
-import {CgClapperBoard} from 'react-icons/cg'
-import {RiMessengerLine} from 'react-icons/ri'
-import {AiOutlineHeart} from 'react-icons/ai'
-import {FiPlusSquare} from 'react-icons/fi'
-const Navbar = () => {
-    return <nav className='w-1/6 border-r h-screen'>
-        <GoHome/>
-        <GoSearch/>
-        <FaRegCompass/>
-        <CgClapperBoard/>
-        <RiMessengerLine/>
-        <AiOutlineHeart/>
-        <FiPlusSquare/>
-    </nav>
-}
+import IconCheck from "../iconCheck";
+import HomeIcon from "../icons/homeIcon";
+import HomeIconFilled from "../icons/homeIconFilled";
+import MessengerIcon from "../icons/messengerIcon";
+import MessengerIconFilled from "../icons/messengerIconFilled";
 
-export default Navbar
+const Navbar = () => {
+  return (
+    <nav className="w-1/6 border-r h-screen">
+      <IconCheck firstIcon={<HomeIcon />} SecondIcon={<HomeIconFilled />}>
+        Ana Sayfa
+      </IconCheck>
+      <IconCheck
+        firstIcon={<MessengerIcon />}
+        SecondIcon={<MessengerIconFilled />}
+      >
+        Mesajlar
+      </IconCheck>
+    </nav>
+  );
+};
+
+export default Navbar;
