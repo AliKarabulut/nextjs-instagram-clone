@@ -3,11 +3,9 @@ import HomeSlider from "@/components/login/homeSlider";
 
 type LayoutTypes = {
   children: React.ReactNode;
-  params: any;
 };
 
-const LoginLayout = ({ children, params }: LayoutTypes) => {
-  console.log(params);
+const LoginLayout = ({ children }: LayoutTypes) => {
   return (
     <article className="w-full h-screen flex justify-center items-center">
       <HomeSlider />
