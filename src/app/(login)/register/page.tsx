@@ -29,7 +29,7 @@ const Register = () => {
       <p className="text-xs text-neutral-500 my-4">
         Kaydolarak,{" "}
         <span className="font-medium text-ig-link">Koşullarımızı, Gizlilik İlkemizi</span> ve
-        <span className="font-medium text-ig-link ">Çerezler İlkemizi</span> kabul etmiş
+        <span className="font-medium text-ig-link "> Çerezler İlkemizi</span> kabul etmiş
         olursun.
       </p>
       <Button type="submit">Kaydol</Button>

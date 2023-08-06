@@ -12,21 +12,19 @@ module.exports = {
         "facebook-logo": "#385185",
         "ig-link": "#00376B",
       },
-      animation: {
-        opacity: "opacity 12s ease-in-out infinite",
-      },
       keyframes: {
         opacity: {
-          "0% , 100%": { opacity: 0, zIndex: 10 },
-          "8% , 32%": { opacity: 1 },
-          "40%": { opacity: 0 },
+          "0%": { opacity: 0, zIndex: 10 },
+          "8% , 32%": { opacity: 1, zIndex: 10 },
+          "40%": { opacity: 0, zIndex: -1 },
+          "100%": { opacity: 0, zIndex: -1 },
         },
       },
       transitionDelay: {
-        '4s': '4s',
+        "4s": "4s",
         "8s": "8s",
         "12s": "12s",
-      }
+      },
     },
     backgroundPosition: {
       logo: "0px -47px",
