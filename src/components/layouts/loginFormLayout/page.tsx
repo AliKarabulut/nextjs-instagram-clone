@@ -2,11 +2,14 @@
 import BottomBox from "@/components/login/bottom-box";
 import Image from "next/image";
 
+import { useSelectedLayoutSegment  } from 'next/navigation'
 type LayoutTypes = {
   children: React.ReactNode;
 };
 
 const LoginFormLayout = ({ children }: LayoutTypes) => {
+  const params = useSelectedLayoutSegment ()
+  
   return (
     <div className="w-[350px] h-fit flex justify-center flex-col">
       <div className="border-[1px] px-9  py-[10px]">
@@ -18,7 +21,7 @@ const LoginFormLayout = ({ children }: LayoutTypes) => {
         </div>
         <form className="flex items-center  flex-col mt-6">{children}</form>
       </div>
-      <BottomBox link="register">Hesabın yok mu</BottomBox>
+      {params && <BottomBox link={params}/>}
       <div className="flex items-center flex-col">
         <div className="text-sm mb-3">Uygulamayı indir.</div>
         <div className="flex gap-2">
