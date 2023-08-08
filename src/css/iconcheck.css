@@ -1,0 +1,12 @@
+@layer components {
+  .icon-check {
+    @apply  flex text-base gap-4 cursor-pointer p-3 my-1 rounded-lg hover:bg-ig-hover transition-all;
+  }
+
+  .icon-check svg {
+    @apply  transition-all;
+  }
+  .icon-check:hover svg {
+    transform: scale(1.1);
+  }
+}

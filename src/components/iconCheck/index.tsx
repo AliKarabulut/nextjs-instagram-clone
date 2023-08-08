@@ -3,11 +3,11 @@ import React, { useRef, useState, useEffect } from "react";
 
 type IconCheckTypes = {
   firstIcon: React.ReactNode;
-  SecondIcon: React.ReactNode;
+  secondIcon: React.ReactNode;
   children: React.ReactNode;
 };
 
-const IconCheck = ({ firstIcon, SecondIcon, children }: IconCheckTypes) => {
+const IconCheck = ({ firstIcon, secondIcon, children }: IconCheckTypes) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -30,8 +30,8 @@ const IconCheck = ({ firstIcon, SecondIcon, children }: IconCheckTypes) => {
   }, []);
 
   return (
-    <div ref={ref} onClick={handleIconClick} className="flex gap-3">
-      {isClicked ? SecondIcon : firstIcon} {children}
+    <div ref={ref} onClick={handleIconClick} className={`  icon-check ${isClicked ? "font-bold" : ""} `}>
+      {isClicked ? secondIcon  : firstIcon} {children}
     </div>
   );
 };
