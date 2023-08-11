@@ -20,8 +20,7 @@ export default function RootLayout({
 }) {
   const cookieStore = cookies();
   const auth_token = cookieStore.get("auth_token");
-
-  console.log(auth_token);
+  
   if (auth_token == undefined) {
     return (
       <html lang="en">

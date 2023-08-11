@@ -7,6 +7,8 @@ import HeartIconFilled from "../icons/heartIconFilled";
 import HeartIcon from "../icons/heartıcon";
 import HomeIcon from "../icons/homeIcon";
 import HomeIconFilled from "../icons/homeIconFilled";
+import InstagramIcon from "../icons/instagramIcon";
+import InstagramLogoIcon from "../icons/instagramLogoIcon";
 import MessengerIcon from "../icons/messengerIcon";
 import MessengerIconFilled from "../icons/messengerIconFilled";
 import ReelsIcon from "../icons/reelsIcon";
@@ -17,6 +19,8 @@ import SearchIconFilled from "../icons/searchIconFilled";
 const Navbar = () => {
   return (
     <nav className="w-1/6 border-r h-screen px-3 pt-2 pb-5">
+      <IconCheck firstIcon={<InstagramIcon />} secondIcon={<InstagramLogoIcon />} type={2}/>
+
       <IconCheck firstIcon={<HomeIcon />} secondIcon={<HomeIconFilled />}>
         Ana Sayfa
       </IconCheck>

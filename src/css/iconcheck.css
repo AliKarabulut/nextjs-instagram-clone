@@ -1,12 +1,25 @@
 @layer components {
   .icon-check {
-    @apply  flex text-base gap-4 cursor-pointer p-3 my-1 rounded-lg hover:bg-ig-hover transition-all;
+    @apply  flex text-base gap-4 cursor-pointer p-3 my-1 rounded-lg transition-all;
   }
 
   .icon-check svg {
     @apply  transition-all;
   }
-  .icon-check:hover svg {
+  .icon-check:hover .icon-scale svg {
     transform: scale(1.1);
+  }
+
+  .icon-check:hover .icon-scale svg {
+    transform: scale(.95);
+  }
+
+  .icon-check:active  {
+    color: #7F7F7F;
+  }
+  .icon-check:active svg {
+ 
+    fill: #7F7F7F;
+    color: #7F7F7F;
   }
 }

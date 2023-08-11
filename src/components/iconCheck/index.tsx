@@ -2,12 +2,18 @@
 import React, { useRef, useState, useEffect } from "react";
 
 type IconCheckTypes = {
-  firstIcon: React.ReactNode;
-  secondIcon: React.ReactNode;
-  children: React.ReactNode;
+  firstIcon?: React.ReactNode;
+  secondIcon?: React.ReactNode;
+  type?: 1 | 2 | 3;
+  children?: React.ReactNode;
 };
 
-const IconCheck = ({ firstIcon, secondIcon, children }: IconCheckTypes) => {
+const IconCheck = ({
+  firstIcon,
+  secondIcon,
+  type = 1,
+  children,
+}: IconCheckTypes) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const [isClicked, setIsClicked] = useState(false);
 
@@ -30,8 +36,24 @@ const IconCheck = ({ firstIcon, secondIcon, children }: IconCheckTypes) => {
   }, []);
 
   return (
-    <div ref={ref} onClick={handleIconClick} className={`  icon-check ${isClicked ? "font-bold" : ""} `}>
-      {isClicked ? secondIcon  : firstIcon} {children}
+    <div
+      ref={ref}
+      onClick={handleIconClick}
+      className={`select-none icon-check ${
+        isClicked && type === 1 ? "font-bold" : ""
+      } ${type !== 2 && "hover:bg-ig-hover "}`}
+    >
+      {type === 2 ? (
+        <>
+          <span className="max-xl:hidden">{secondIcon}</span>{" "}
+          <span className="xl:hidden">{firstIcon}</span>
+        </>
+      ) : isClicked  ? (
+        <span className={`icon-scale `}>{secondIcon}</span>
+      ) : (
+        <span className="icon-scale">{firstIcon}</span>
+      )}{" "}
+      {children}
     </div>
   );
 };

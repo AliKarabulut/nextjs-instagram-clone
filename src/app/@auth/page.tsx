@@ -13,7 +13,7 @@ const Login = () => {
   const router = useRouter();
 
   const requestHandler = async () => {
-    console.log("requestHandler");
+
     await fetch("api/login", {
       method: "POST",
       body: JSON.stringify("asd"),
