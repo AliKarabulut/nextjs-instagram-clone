@@ -7,7 +7,7 @@ export default function SearchIconFilled({ className, ...props }: SearchIconFill
     <svg
       {...{ className }}
       {...props}
-      aria-label="Ana Sayfa"
+      aria-label="Ara"
       color="rgb(0, 0, 0)"
       fill="rgb(0, 0, 0)"
       height="24"
@@ -19,16 +19,16 @@ export default function SearchIconFilled({ className, ...props }: SearchIconFill
         d="M18.5 10.5a8 8 0 1 1-8-8 8 8 0 0 1 8 8Z"
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3"
       ></path>
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3"
         x1="16.511"
         x2="21.643"
         y1="16.511"

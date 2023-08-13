@@ -10,7 +10,7 @@ export default function HeartIconFilled({
     <svg
       {...{ className }}
       {...props}
-      aria-label="Ana Sayfa"
+      aria-label="Bildirim"
       color="rgb(0, 0, 0)"
       fill="rgb(0, 0, 0)"
       height="24"

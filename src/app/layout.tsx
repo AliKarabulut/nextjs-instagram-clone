@@ -2,9 +2,9 @@ import { cookies } from "next/headers";
 import Navbar from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Roboto({ subsets: ["latin"], weight: ["100", "300", "400","500","700","900"] });
 
 export const metadata: Metadata = {
   title: "Instagram clone with socket",
@@ -20,13 +20,11 @@ export default function RootLayout({
 }) {
   const cookieStore = cookies();
   const auth_token = cookieStore.get("auth_token");
-  
+
   if (auth_token == undefined) {
     return (
       <html lang="en">
-        <body className={inter.className}>
-          {auth}
-        </body>
+        <body className={inter.className}>{auth}</body>
       </html>
     );
   } else {

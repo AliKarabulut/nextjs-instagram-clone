@@ -7,7 +7,7 @@ export default function HeartIcon({ className, ...props }: HeartIconTypes) {
     <svg
       {...{ className }}
       {...props}
-      aria-label="Ana Sayfa"
+      aria-label="Bildirim"
       color="rgb(0, 0, 0)"
       fill="rgb(0, 0, 0)"
       height="24"

@@ -10,7 +10,7 @@ export default function MenuIcon({
     <svg
       {...{ className }}
       {...props}
-      aria-label="Ana Sayfa"
+      aria-label="Menu"
       color="rgb(0, 0, 0)"
       fill="rgb(0, 0, 0)"
       height="24"
@@ -21,9 +21,9 @@ export default function MenuIcon({
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="3"
         x2="21"
         y1="4"
@@ -32,9 +32,9 @@ export default function MenuIcon({
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="3"
         x2="21"
         y1="12"
@@ -43,9 +43,9 @@ export default function MenuIcon({
       <line
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
         x1="3"
         x2="21"
         y1="20"

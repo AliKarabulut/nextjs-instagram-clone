@@ -10,7 +10,7 @@ export default function CompassIconFilled({
     <svg
       {...{ className }}
       {...props}
-      aria-label="Ana Sayfa"
+      aria-label="Kesfet"
       color="rgb(0, 0, 0)"
       fill="rgb(0, 0, 0)"
       height="24"

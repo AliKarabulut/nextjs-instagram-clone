@@ -1,17 +1,27 @@
 @layer components {
+
+  .icon-logo {
+    @apply mt-1 mb-1.5;
+  }
+
   .icon-check {
-    @apply  flex text-base gap-4 cursor-pointer p-3 my-1 rounded-lg transition-all;
+    @apply  flex text-base gap-4 p-3 cursor-pointer rounded-lg transition-all ;
   }
 
   .icon-check svg {
-    @apply  transition-all;
+    @apply  transition-all leading-none;
   }
-  .icon-check:hover .icon-scale svg {
-    transform: scale(1.1);
+
+  .icon-scale  {
+    @apply  leading-none;
   }
 
   .icon-check:hover .icon-scale svg {
-    transform: scale(.95);
+    @apply scale-110;
+  }
+
+  .icon-check:hover .icon-scale svg {
+    @apply scale-95
   }
 
   .icon-check:active  {

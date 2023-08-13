@@ -11,7 +11,8 @@ module.exports = {
         "primary-button": "#0095F6",
         "facebook-logo": "#385185",
         "ig-link": "#00376B",
-        "ig-hover": "#0000000d"
+        "ig-hover": "#0000000d",
+        "ig-seperator": "#dbdbdb",
       },
       keyframes: {
         opacity: {

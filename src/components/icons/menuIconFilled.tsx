@@ -10,7 +10,7 @@ export default function MenuIconFilled({
     <svg
       {...{ className }}
       {...props}
-      aria-label="Ana Sayfa"
+      aria-label="Menu"
       color="rgb(0, 0, 0)"
       fill="rgb(0, 0, 0)"
       height="24"
