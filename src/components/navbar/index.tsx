@@ -17,6 +17,7 @@ import ReelsIcon from "../icons/reelsIcon";
 import ReelsIconFilled from "../icons/reelsIconFilled";
 import SearchIcon from "../icons/searchIcon";
 import SearchIconFilled from "../icons/searchIconFilled";
+import MiniNav from "./miniNavbar";
 
 const Navbar = () => {
   return (
@@ -57,7 +58,7 @@ const Navbar = () => {
           Oluştur
         </IconCheck>
       </div>
-      <IconCheck firstIcon={<MenuIcon />} secondIcon={<MenuIconFilled />} className="mt-auto">
+      <IconCheck firstIcon={<MenuIcon />} secondIcon={<MenuIconFilled />} components={<MiniNav/>} className="mt-auto">
         Daha Fazla
       </IconCheck>
     </nav>
