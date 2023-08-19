@@ -1,3 +1,7 @@
+import Link from "next/link";
+
+
+
 type MiniNavProps = {
   children?: React.ReactNode;
   className?: string;
@@ -10,7 +14,7 @@ const MiniNav = ({ children, className }: MiniNavProps) => {
     >
       <div>
         <div className="whitespace-nowrap text-sm w-[15.5rem] h-[3.125rem] flex items-center font-normal hover:bg-ig-hover p-4 rounded-lg">
-          Çıkış yap
+          <Link href="/logout" className="no-underline text-black">Çıkış yap</Link>
         </div>
       </div>
     </div>
